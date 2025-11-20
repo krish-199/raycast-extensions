@@ -22,6 +22,16 @@
       "mode": "no-view"
     }
   ],
+  "preferences": [
+    {
+      "name": "delay",
+      "type": "textfield",
+      "required": false,
+      "title": "Typing Delay",
+      "description": "Delay between keystrokes in seconds (default: 0.002)",
+      "default": "0.002"
+    }
+  ],
   "dependencies": {
     "@raycast/api": "^1.103.5",
     "@raycast/utils": "^1.17.0"
