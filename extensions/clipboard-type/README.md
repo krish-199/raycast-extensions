@@ -1,3 +1,12 @@
 # clipboard-type
 
-Clipboard Type allows you to paste values of your clipboard, in the places where direct pasting is not allowed, like many web forms or RDP where clipboard is not synced. With Cliboard Type first value of clipboard is taken is typed using internal api rather using OS pasting command
+**Clipboard Type** allows you to "paste" the contents of your clipboard by simulating keystrokes. This is particularly useful in situations where standard pasting is blocked, disabled, or unavailable, such as:
+
+- **Restricted Web Forms**: Bypass restrictions on websites that disable the paste functionality in password or input fields.
+- **Remote Desktop (RDP) & VNC**: Type text into remote sessions where clipboard synchronization is inactive or broken.
+- **Legacy Applications**: Input text into older applications that may not support standard system paste commands.
+
+**Features:**
+- **Type Clipboard Command**: Reads the latest text from your clipboard and types it out character by character.
+- **Smart Formatting**: Correctly handles special characters like newlines and tabs by simulating the appropriate key codes.
+- **Configurable Speed**: Includes a "Typing Delay" preference (default: 0.02s) to adjust the typing speed, ensuring compatibility with slower interfaces or remote connections.

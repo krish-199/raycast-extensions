@@ -47,12 +47,12 @@ export default async function Command() {
   // Execute the AppleScript using osascript directly
   try {
     await execFileAsync("osascript", ["-e", appleScriptContent]);
+    await showCustomToast("Clipboard typed out", Toast.Style.Success);
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : String(error);
     console.error("Error executing AppleScript:", error);
     await showCustomToast(`Failed to type clipboard content ${message}`, Toast.Style.Failure);
   }
-  await showCustomToast("Clipboard typed out", Toast.Style.Success);
 }
 
 async function showCustomToast(message: string, type: Toast.Style): Promise<void> {
