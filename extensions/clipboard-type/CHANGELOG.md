@@ -1,3 +1,3 @@
-# clipboard-type Changelog
+# Clipboard Type Changelog
 
 ## [Initial Version] - {PR_MERGE_DATE}
